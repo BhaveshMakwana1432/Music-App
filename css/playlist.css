@@ -1,0 +1,255 @@
+
+
+.main-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+}
+
+.main-container #left-container {
+    width: 70%;
+    height: 100%;
+    padding: 0 1rem;
+    transition: all .5s linear;
+}
+
+.main-container #right-container {
+   width: 30%;
+   height: 100%;
+   padding: 1rem;
+   color: var(--text-white);
+   font-weight: var(--roboto-300);
+}
+
+#similar-artists-list .card {
+    background-color: transparent !important;
+}
+
+#similar-artists-list  #square-image {
+  box-shadow: 0px 2px 10px rgba(46, 223, 223, 0.726);
+}
+
+#right-container #right-container-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+#left-container #hero {
+    width : 100%;
+    background-color: rgb(15, 15, 63);
+}
+
+#left-container #songs-list-items {
+    height: 50vh;
+    width : 100%;
+    border: 1px solid rgb(46, 45, 45);
+    margin-top: 1.5rem;
+}
+
+#hero {
+    display: flex;
+}
+
+#hero #hero-image {
+    width: 40%;
+    background-image: url("../Image/coldplayboys.jpg");
+    background-position-y: 40px;
+    background-size: cover;
+    position: relative;
+}
+
+#hero #hero-image::before {
+    content: "";
+    position: absolute;
+    background : linear-gradient(to bottom , transparent , rgb(29, 28, 28));
+    width: 100%;
+    height: 100%;
+}
+
+#left-container #content {
+    width : 60%;
+    padding: 2rem;
+    color :rgb(154, 154, 155);
+}
+
+#content #header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#content #header h1{
+   color: var(--text-white);
+}
+
+#content #header h1 span {
+    font-size: var(--font-200);
+    font-weight: var(--roboto-300);
+}
+
+#content #about {
+  margin-top: 1.5rem;
+}
+
+#content #about p {
+    line-height: 1.4;
+    margin : 1rem 0;
+    font-size: var(--font-200)
+}
+
+#play-button {
+    width : 10rem;
+    height: 3rem;
+    font-size: var(--font-200);
+    background: linear-gradient(90deg, rgba(83,11,171,1) 0%, rgba(200,0,255,1) 100%);
+    border: none;
+    outline-none;
+    color: var(--text-white);
+    cursor: pointer;
+    margin: 1rem 1.5rem 1rem 0rem;
+}
+
+/* list items style */
+
+#playlist-body {
+    display: block !important;
+}
+
+#playlist-body ul li div:nth-child(1) {
+    width : 25%;
+}
+
+#playlist-body ul li {
+    background-color: rgb(18, 19, 44);
+    padding: .75rem;
+    width: 100%;
+    transition: all .5s ease;
+}
+
+
+#playlist-body ul li div:nth-child(2) i {
+  margin : 0 1rem;
+}
+
+
+#playlist-body ul li div:nth-child(2) .fa-plus {
+    color: aquamarine;
+    opacity: .4;
+    cursor: pointer;
+}
+
+
+#recently-played-list #playlist-body ul li div:nth-child(1) {
+      width: 50%;
+}
+
+#recently-played-list #playlist-body ul li {
+    background-color: transparent;
+}
+
+@media screen and (max-width :400px) {
+    .main-container #right-container {
+        width : 100%;
+    }
+}
+
+@media screen and (max-width : 786px) {
+    :root {
+        --font-100: 0.5rem;
+        --font-150: 0.75rem;
+        --font-200: 1rem;
+    }
+  
+    .main-container {
+        display: block;
+        width: 100%;
+    }
+   .main-container #left-container {
+        width: 100%;
+    }
+
+    .main-container #right-container {
+        width: 80%;
+        padding: 1rem;
+        display: block;
+        margin: auto;
+    }
+   
+    #playlist-body ul li div:nth-child(1) {
+        width : 40%;
+    }
+    
+   #hero #hero-image {
+        display: none;
+    }
+
+   
+}
+
+@media screen and (max-width : 1024px) {
+    
+    .main-container {
+        width: 100%;
+    }
+    #left-container #content  {
+        width: 100%;
+        background-image: url("../Image/coldplayboys.jpg");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+    }
+    
+    #left-container #content #about p {
+        text-shadow: 0px 3px 2px #000;
+    }
+
+    #left-container #content::before {
+        content: "";
+        position: absolute;
+        width : 100%;
+        height : 100%;
+        background: rgb(5, 5, 51);
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: .6;
+    }
+ 
+    #similar-artists-list .card-image #square-image {
+        transform: scale(.7);
+    }
+
+    #similar-cartists-list .card {
+        justify-content: space-between;
+    }
+
+    #similar-artists-list .card-body #left-content  {
+        margin-left: 1.5rem;
+    }
+
+    /* #similar-artists-list .card-body #left-content .title {
+        font-size: var(--font-100);
+    } */
+    
+    #playlist-body {
+        margin-right: 0px;
+    }
+    #playlist-body ul li div:nth-child(1) {
+        width : 40%;
+    }
+}
+
+@media screen and (max-width : 1300px) {
+    #similar-artists-list .card-image #square-image {
+        transform: scale(.7);
+    }   
+
+    #similar-artists-list .card-body #left-content  {
+        margin-left: 1.5rem;
+    }
+
+}

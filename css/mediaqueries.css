@@ -1,0 +1,233 @@
+/* mobile breakpoint view <= 360px */
+
+@media  screen and (max-width : 400px) {
+    aside{
+        display: none;
+    }
+}
+
+/* Tablet breakpoint <= 786 */
+@media screen and (min-width: 786px) {
+  :root {
+    --font-100: 0.65rem;
+    --font-150: 0.85rem;
+    --font-200: 1rem;
+    --font-250: 1.25rem;
+  }
+
+  #search-bar {
+    display: block;
+  }
+
+  .search-sm-icon {
+    display: none;
+  }
+
+  #latest-release {
+    padding: 2rem;
+  }
+
+  .releases {
+    width: 100%;
+    margin: 0.5rem 0rem;
+  }
+
+  .card-body {
+    justify-content: space-around;
+  }
+
+  .card-image #square-image {
+    width: 75px;
+    height: 75px;
+  }
+
+  .card-body #right-content {
+    display: block;
+    line-height: 2;
+  }
+
+  #right-content .fas {
+    color: var(--text-white);
+    font-size: var(--font-100);
+  }
+
+  #right-container {
+    width: 50%;
+  }
+
+  #right-container .fas {
+    opacity: 0.4;
+    font-size: var(--font-150);
+  }
+  #popular-artists {
+    padding: 0rem 2rem;
+  }
+  #container #music-stations {
+    justify-content: space-around;
+    overflow-x: hidden;
+  }
+  #player {
+    padding: 0rem 0.6rem;
+  }
+  #player #music-details {
+    width: 20%;
+  }
+
+  #play-icon {
+    display: none;
+  }
+
+  #music-controls {
+    display: flex;
+  }
+
+  #music-settings {
+    display: block;
+  }
+
+  #player #music-details #song-image {
+    transform: scale(0.7);
+  }
+
+  #cards #card-image {
+    transform: scale(1.1);
+  }
+
+  #languages-hits #song-cards {
+    padding-left: 10px;
+  }
+  #cards #card-content {
+    padding-left: 0rem;
+  }
+  .place-container {
+    height: 125px;
+  }
+}
+
+/* mini laptop screen breakpoint - 1024px*/
+@media screen and (min-width: 1024px) {
+  nav #left-container {
+    justify-content: space-around;
+  }
+  #left-container #link {
+    display: block;
+  }
+  .main-container {
+    display: flex;
+  }
+
+  section {
+    width: 70%;
+    margin: auto;
+    display: block;
+  }
+
+  aside {
+    width: 30%;
+  }
+
+  #artist-avatars .circle-image {
+    margin-right: 0px;
+  }
+
+  #music-places .container,
+  .place-container,
+  #latest-release #playlist,
+  #artist-avatars {
+    width: 100%;
+  }
+
+  #search-bar {
+    width: 55%;
+  }
+
+  #music-stations .circle-image .image-container,
+  #music-stations .circle-image::before {
+    width: 90px;
+    height: 90px;
+  }
+
+  #music-station-logo {
+    transform: scale(0.8);
+    margin-top: 0;
+  }
+
+  #song-image {
+    transform: scale(0.8);
+  }
+
+  .song-playlist {
+   display: block;
+  }
+
+
+}
+
+/* Large screen breakpoint 1200px*/
+@media screen and (min-width: 1200px) {
+  section {
+    width: 60%;
+  }
+
+  .aside {
+    width: 40%;
+  }
+
+ 
+
+  #music-stations #music-station-logo {
+    margin-top: 0;
+  }
+
+  #song-cards #cards #card-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  #languages-hits #song-cards {
+    height: 220px;
+  }
+
+  #search-input {
+    width: 89%;
+  }
+
+  header #Notification-bell .fas {
+    font-size: 1.5rem;
+  }
+
+  #music-stations .circle-image .image-container,
+  #music-stations .circle-image::before {
+    width: 100px;
+    height: 100px;
+  }
+
+  #music-station-logo {
+    transform: scale(1);
+    margin-top: 0;
+  }
+
+  #song-image {
+    transform: scale(1);
+  }
+  
+  #artist-avatars {
+      justify-content: space-around;
+  }
+
+  #popular-artists .circle-image .artist-name {
+     margin-top: 10px;
+     width: 100px;
+  }
+  #popular-artists .circle-image .image-container {
+      width : 100px;
+      height: 100px;
+  }
+
+  #popular-artists .circle-image .image-container::before {
+      width : 100px;
+      height: 100px;
+  }
+
+
+}
